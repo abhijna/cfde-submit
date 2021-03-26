@@ -14,9 +14,9 @@ The steps below will walk you through the process of creating a new virtual envi
 
 Alternatively, you can also use conda to create a new virtual environment.
 
-1. Create a new conda environemnt: `conda create --name cfde_venv`
+1. Create a new conda environemnt: `conda create --name cfde_venv python3`
 2. Activate the environment: `conda activate cfde_venv`
-3. Successful activation of the virtual environment will result in the update from "(base)" to "(cfde_vevn)" in front of your shell prompt
+3. Successful activation of the virtual environment will result in the update from "(base)" to "(cfde_venv)" in front of your shell prompt
 4. To exit the environment run: `conda deactivate`
 
 ## Install cfde-submit
