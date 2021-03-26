@@ -93,9 +93,9 @@ def get_bag(data_path, output_dir=None, delete_dir=False,
             try:
                 shutil.copytree(data_path, output_dir)
             except FileExistsError:
-                raise FileExistsError(("The output directory must not exist. "
-                                       "Delete '{}' to submit.\nYou can set delete_dir=True "
-                                       "to avoid this issue in the future.").format(output_dir))
+                raise FileExistsError(f"Error: The directory {output_dir} already exists from a "
+                                      f"previous cfde-submit run. Please remove this directory and "
+                                      f"try again.")
             # Process new dir instead of old path
             data_path = output_dir
         # If output_dir not specified, never delete data dir

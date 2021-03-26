@@ -104,8 +104,16 @@ def test_client_invalid_version(logged_in, mock_remote_config):
         client.CfdeClient().check()
 
 
-def test_client_permission_denied(logged_in, mock_remote_config, mock_flows_client,
-                                  mock_globus_api_error):
+def test_client_permission_denied_404(logged_in, mock_remote_config, mock_flows_client,
+                                      mock_globus_api_error):
+    mock_globus_api_error.http_status = 404
+    mock_flows_client.get_flow.side_effect = mock_globus_api_error
+    with pytest.raises(exc.PermissionDenied):
+        client.CfdeClient().check()
+
+
+def test_client_permission_denied_405(logged_in, mock_remote_config, mock_flows_client,
+                                      mock_globus_api_error):
     mock_globus_api_error.http_status = 405
     mock_flows_client.get_flow.side_effect = mock_globus_api_error
     with pytest.raises(exc.PermissionDenied):

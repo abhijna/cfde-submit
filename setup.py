@@ -23,7 +23,7 @@ setup(
     cfde-submit=cfde_submit.main:cli
     ''',
     install_requires=[
-        "bdbag>=1.5.5",
+        "bdbag>=1.6.0",
         "Click>=7.0",
         "datapackage>=1.10.0",
         "fair-research-login>=0.2.0",
