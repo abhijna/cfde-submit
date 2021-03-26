@@ -42,7 +42,7 @@ Constructing a C2M2 instance requires comprehensive knowledge of your DCC's data
 
 When using the `cfde-submit` tool, your C2M2 instance must be contained in a folder on your computer, and it must include the JSON Schema document appropriate for the type of C2M2 instance you are submitting. 
 
-**[TODO: Add detail about any extra files that need to be included in the C2M2 datapackage. E.g., DCC and contact info.]**
+<[TODO: Add detail about any extra files that need to be included in the C2M2 datapackage. E.g., DCC and contact info.]>
 
 ### Find your DCC's identifier
 
@@ -50,7 +50,7 @@ When using `cfde-submit` to submit a new C2M2 instance, you must enter your DCC'
 
 The identifier you need for `cfde-submit` is of the form `cfde_registry_dcc:*`, where the `*` is replaced by a short form of your DCC's name. For example, the DCC identifier for The Human Microbiome Project is `cfde_registry_dcc:hmp`.
 
-**[TODO: The link above will not work until the production portal has been updated. When the production portal is updated, make sure it works!]**
+<[TODO: The link above will not work until the production portal has been updated. When the production portal is updated, make sure it works!]>
 
 ### Check your system
 
